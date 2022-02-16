@@ -36,7 +36,7 @@ L.polyline(line, {
 
   L.polyline(line2, {
     color: "blue",
-    // dasharray:"1"
+    dasharray:"10 10"
   }).addTo(map);
 
 
