@@ -41,7 +41,7 @@ let torontoHoods = "https://raw.githubusercontent.com/tonywang3571/Mapping_Earth
 let myStyle = {
   color: "blue",
   weight: 1,
-  fillcolor: "yellow"
+  fillColor: "yellow"
 }
 
 // Grabbing our GeoJSON data.
