@@ -3,18 +3,19 @@
 ## Overview of Project  
 
 **Purpose:**  
-The purpose of this project is to create tectonic plates and markers for earthquakes and major earthquakes around the work with API.
+The purpose of this project is to build tectonic plates, markers, and layers of a map for earthquakes around the world.  
+
 ## Resources:  
-- Data Source: Provided [Data](https://github.com/tonywang3571/Navel_Biodiversity_Plotly/blob/master/samples.json)  
-- Software: VS code 1.63.2 (Javascript, HTML, CSS, Leaflet 1.7.1)  
+- Data Source: [Major Earthquakes Data](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson), [Tectonic Plates Data](https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json)  
+- Software: VS code 1.63.2 (Javascript, HTML, CSS, Leaflet 1.7.1), [mapbox styles](https://docs.mapbox.com/api/maps/styles/)  
 
 ## Analysis and Results  
 
 **Analysis:**  
-For this project, we used Plotly javascript to create interactive charts from a dataset provided in json format. We extracted specific data needed to build different charts (horizontal bar, gauge, and bubble plot) to allow users to explore. We also created a demographic info table as well as dropdown menu to allow user to select different participant's information and display their results.  
+For this project, we used Leaflet javascript to create an interactive map with layers and markers to display earthquakes around the world. We created different map layers to change from street view, satellite view, or a night time view. We also created color coded markers for the magnitude of the earthquakes and where the earthquakes took place. A popup marker will be displayed with greater details of the recorded magnitude and precise location of the earthquake. We also added a tectonic plates layer to display the location of the plates and can be displayed in conjunction with earthquake markers to provide greater visualization and understanding of the locations of the earthquakes.  
 
 **Results:**  
-When a user visits our webpage, they will automatically see the information and results of the first participant. The user may then explore our webpage and charts, and be able to change to different participant's information and display their results. A horizontal bar graph lists the top 10 bacteria OTU (operational taxonomic unit) present for that particular participant. A "gauge" chart, displaying the frequency of navel washing by the participant, though specific naval washing instructions were not provided. A bubble chart was created to display the different bacteria cultures as well as the value of each bacteria per sample found with greater bubble radius for greater values of the bacteria present in the samples.  
+When the user views our map, the user can switch between 3 different map views, satellite, street, or dark views. The user can also add or remove markers for earthquake locations, tectonic plates, and major earthquakes. Major earthquakes are color coded with yellow being less than or equal to 5, orange greater than 5 but less than or equal to 6, or red which is greater than 6 for the recorded magnitude. Popups will be displayed with further details about the earthquake for location and recorded magnitude if the user clicks on the marker(s) they are interested in viewing. Tectonic plate markers were also added to display where the tectonic plates are located.  
 <img src="Earthquakes_Challenge/Resources/Dark_all_popup.PNG">  
 <img src="Earthquakes_Challenge/Resources/Satellite_all.PNG">  
 <img src="Earthquakes_Challenge/Resources/Street_major_plates.PNG">  
@@ -23,11 +24,11 @@ When a user visits our webpage, they will automatically see the information and 
 ## Challenge Summary  
 
 **Summary**  
-The purpose of this project is to create an interactive webpage that allows the user to explore different interactive charts of different participants' navel bacteria.  
+The purpose of this challenge is to build markers and layers for an interactive map of earthquakes around the world.  
 
 ### Codes Used  
 (Please look at specific files for codes used)  
-Code for [building data table and charts](https://github.com/tonywang3571/Navel_Biodiversity_Plotly/blob/master/static/js/charts.js)  
-Code for [building webpage](https://github.com/tonywang3571/Navel_Biodiversity_Plotly/blob/master/index.html)  
-Code for [styling webpage](https://github.com/tonywang3571/Navel_Biodiversity_Plotly/blob/master/static/css/styles.css)  
-Link to [webpage](https://tonywang3571.github.io/Navel_Biodiversity_Plotly/)  
+Code for [building map layers and markers](https://github.com/tonywang3571/Mapping_Earthquakes/blob/master/Earthquakes_Challenge/static/js/challenge_logic.js)  
+Code for [building webpage](https://github.com/tonywang3571/Mapping_Earthquakes/blob/master/Earthquakes_Challenge/index.html)  
+Code for [styling webpage](https://github.com/tonywang3571/Mapping_Earthquakes/blob/master/Earthquakes_Challenge/static/css/style.css)  
+
