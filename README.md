@@ -3,8 +3,7 @@
 ## Overview of Project  
 
 **Purpose:**  
-The purpose of this project is to create an interactive webpage that allows the user to explore different interactive charts about bacterial growth in participants' navel.  
-
+The purpose of this project is to create tectonic plates and markers for earthquakes and major earthquakes around the work with API.
 ## Resources:  
 - Data Source: Provided [Data](https://github.com/tonywang3571/Navel_Biodiversity_Plotly/blob/master/samples.json)  
 - Software: VS code 1.63.2 (Javascript, HTML, CSS, Leaflet 1.7.1)  
